@@ -1,0 +1,169 @@
+/* Estilos gerais para o body e tabela */
+body {
+    /* Fundo gradiente para o body */
+    background-image: linear-gradient(to bottom, rgb(16, 16, 17), rgb(12, 34, 36));
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(255, 240, 240);
+}
+
+table {
+    /* Estilos para a tabela */
+    width: 30%;
+    margin: auto;
+}
+
+dl {
+    /* Alinhamento central para a descrição */
+    text-align: center;
+}
+
+td,
+th,
+tr {
+    /* Estilos para as células da tabela */
+    border: 2px solid #0430f3;
+    text-align: center;
+    background-color: #eb0505;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Estilos para a logo */
+.logo {
+    /* Estilos para a logo */
+    margin-top: 1%;
+    width: 10%;
+    height: 10%;
+}
+
+/* Estilos para os botões e modal novo cliente */
+#modalNovoCliente button,
+#btnNovoCliente {
+    /* Estilos para os botões e o botão Novo Cliente */
+    background-color: #0430f3;
+    color: rgb(253, 252, 252);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#modalNovoCliente button:hover,
+#btnNovoCliente:hover {
+    /* Efeito hover para os botões e o botão Novo Cliente */
+    background-color: #fbfbfc;
+}
+
+/* Estilos para o modal */
+.modal {
+    /* Estilos gerais para o modal */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para o conteúdo do modal de informações do cliente */
+#myModal .modal-content {
+    /* Estilos para o conteúdo do modal de informações do cliente */
+    position: fixed;
+    background-color: #0a0a0a;
+    width: 100%;
+}
+
+/* Estilos para o conteúdo do modal de novo cliente */
+#modalNovoCliente .modal-content-novo-cliente {
+    /* Estilos para o conteúdo do modal de novo cliente */
+    position: fixed;
+    top: 0;
+    background-color: #fefefe;
+    width: 100%;
+}
+
+/* Estilos para o botão Fechar */
+.close {
+    /* Estilos para o botão Fechar */
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    /* Efeito hover para o botão Fechar */
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para o cabeçalho, corpo e rodapé do modal */
+.modal-header,
+.modal-body,
+.modal-footer {
+    /* Estilos para o cabeçalho, corpo e rodapé do modal */
+    padding: 2px 16px;
+    background-color: #eef1f7;
+    color: white;
+}
+
+/* Adicionar Animação */
+@-webkit-keyframes slideIn {
+
+    /* Animação de slideIn para o modal */
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+
+    /* Animação de slideIn para o modal */
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+
+    /* Animação de fadeIn para o modal */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+
+    /* Animação de fadeIn para o modal */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
